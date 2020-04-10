@@ -1,9 +1,9 @@
 "use strict";
 
 // REQUIRED MODULES
-const bodyParser = require("body-parser");
-const express = require("express");
-const path = require("path");
+import bodyParser from "body-parser";
+import express from "express";
+import path from "path";
 
 // CONTROLLERS
 
@@ -12,10 +12,10 @@ const path = require("path");
 const app = express();
 
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "../public/views/"));
+app.set("views", path.join(path.resolve(), "/public/views/"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "../public/")));
+app.use(express.static(path.join(path.resolve(), "/public/")));
 
 // MIDDLEWARE
 app.use((request, response, next) => {
@@ -25,7 +25,9 @@ app.use((request, response, next) => {
 });
 
 // CONTROLLER CONFIGURATION
-
+app.get("/", (request, response) => {
+	response.render("home");
+});
 
 // SERVER CONFIGURATION
 const DEFAULT_PORT = 3000;

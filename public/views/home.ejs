@@ -2,28 +2,30 @@
 <%- include("partials/navbar") %>
 
 <div class="container main">
-	<section id="biography">
-		<div id="biographyPicture" class="biography-section">
-			<div class="biography-content">
-				<img class="biography-image" src="/mattyo.jpg" alt="Matt Schafer portrait.">
+	<div id="meshTerrain">
+		<section id="biography">
+			<div id="biographyPicture" class="biography-section">
+				<div class="biography-content">
+					<img class="biography-image" src="/mattyo.jpg" alt="Matt Schafer portrait.">
+				</div>
 			</div>
-		</div>
-
-		<div id="biographyInfo" class="biography-section">
-			<div class="biography-content">
-				<div class="biography-text">
-					<p>Developer with an interest for all software engineering – from embedded systems to computer graphics to application development to front end.</p>
-
-					<div class="centered-text">
-						<a class="ui inverted violet button" href="/portfolio">View my projects.</a>
+	
+			<div id="biographyInfo" class="biography-section">
+				<div class="biography-content">
+					<div class="biography-text">
+						<p>Developer with an interest for all software engineering – from embedded systems to computer graphics to application development to front end.</p>
+	
+						<div class="centered-text">
+							<a class="ui inverted violet button" href="/portfolio">View my projects.</a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 
 	<section id="about">
-
+		
 	</section>
 
 	<section id="skills">
@@ -37,6 +39,16 @@
 	<footer>
 
 	</footer>
+
+	<script src="/scripts/vendor/three.min.js"></script>
+	<script src="/scripts/vendor/Detector.js"></script>
+	<script src='/scripts/vendor/postprocessing/EffectComposer.js'></script>
+	<script src='/scripts/vendor/postprocessing/RenderPass.js'></script>
+	<script src='/scripts/vendor/postprocessing/ShaderPass.js'></script>
+	<script src='/scripts/vendor/shaders/CopyShader.js'></script>
+	<script src='/scripts/vendor/shaders/VignetteShader.js'></script>
+	<script src="/scripts/vendor/ImprovedNoise.js"></script>
+	<script src="/scripts/meshTerrain.js" type="text/javascript"></script>
 </div>
 
 <%- include("partials/footer") %>

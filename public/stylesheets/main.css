@@ -8,98 +8,11 @@ html, body {
 }
 
 .container.main {
+	background-color: #442244;
 	margin-top: 0;
-}
-
-.biography-section {
-	width: 40%;
-
-	height: 75vh;
-}
-
-.biography-content {
-	display: flex;
-
-	align-items: center;
-	justify-content: center;
-
-	width: 100%;
-	height: 100%;
-}
-
-.biography-image {
-	width: 60%;	
-
-	border-radius: 50%;
-	border: 16px solid white;
-
-	margin-left: 25%;
-}
-
-.biography-text {
-	width: 90%;
-	background-color: rgba(128, 128, 128, 0.7);
-	font-size: 1.5rem;
-
-	margin-right: 5%;
-	padding: 20px;
 }
 
 #navbar {
 	border-radius: 0;
 	margin-bottom: 0;
-}
-
-#biography {
-	display: flex;
-	
-	flex-wrap: wrap;
-	align-content: center;
-	align-items: center;
-	justify-content: center;
-
-	padding-top: 8vh;
-	padding-bottom: 16vh;
-}
-
-#biographyPicture {	
-	order: 1;
-	
-	background-color: red;
-	margin-right: 1%;
-}
-
-#biographyInfo {
-	order: 2;
-	
-	background-color: green;
-}
-
-@media only screen and (max-width: 1000px) {
-	.biography-section {
-		width: 80%;
-		height: auto;
-
-		padding-top: 25px;
-		padding-bottom: 25px;
-	}
-
-	.biography-image {
-		margin-left: 0;
-	}
-	
-	.biography-text {
-		font-size: 1.2rem;
-
-		margin-right: 0;
-	}
-
-	#biography {
-		padding-top: 4vh;
-		padding-bottom: 8vh;
-	}
-
-	#biographyPicture {	
-		margin-right: 0;
-	}
 }

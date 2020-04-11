@@ -5,7 +5,9 @@ import express from "express";
 const router = express.Router();
 
 router.get("/", (request, response) => {
-	response.render("home");
+	response.render("home",  {
+		additionalStyles: ["biography"]
+	});
 });
 
 router.get("/portfolio", (request, response) => {

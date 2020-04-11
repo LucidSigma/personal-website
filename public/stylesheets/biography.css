@@ -17,20 +17,26 @@
 	width: 60%;	
 
 	border-radius: 50%;
-	border: 16px solid white;
+	border: 8px solid white;
 
 	margin-left: 25%;
 }
 
 .biography-text {
 	width: 90%;
-	background-color: rgba(128, 128, 128, 0.4);
+	background-color: rgba(128, 64, 128, 0.2);
 	font-size: 1.5rem;
+	text-align: justify;
 
 	border-radius: 10px;
 
 	margin-right: 5%;
 	padding: 20px;
+}
+
+.biography-name {
+	font-size: 3.0rem;
+	font-weight: bold;
 }
 
 #meshTerrain {
@@ -87,5 +93,15 @@
 
 	#biographyPicture {	
 		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.biography-name {
+		font-size: 2.0rem;
+	}
+
+	#meshTerrain {
+		height: 75vh;
 	}
 }

@@ -6,7 +6,7 @@ import express from "express";
 import path from "path";
 
 // CONTROLLERS
-
+import mainController from "./controllers/mainController.js";
 
 // APP CONFIGURATION
 const app = express();
@@ -20,14 +20,13 @@ app.use(express.static(path.join(path.resolve(), "/public/")));
 // MIDDLEWARE
 app.use((request, response, next) => {
 	response.locals.title = "Matt Schafer";
+	// REMEMBER TO UPDATE THE TITLE!
 
 	next();
 });
 
 // CONTROLLER CONFIGURATION
-app.get("/", (request, response) => {
-	response.render("home");
-});
+app.use("/", mainController);
 
 // SERVER CONFIGURATION
 const DEFAULT_PORT = 3000;

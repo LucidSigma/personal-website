@@ -14,6 +14,7 @@
 				<div class="biography-content">
 					<div class="biography-text">
 						<h1 class="centered-text biography-name">Matthew Schafer</h1>
+						<hr>
 						<p>Developer with an interest in all aspects of software engineering – from embedded systems to computer graphics to application development to front end.</p>
 	
 						<div class="centered-text">
@@ -26,11 +27,112 @@
 	</div>
 
 	<section id="about">
-		
+		<h2 class="about-header">About Me</h2>
+
+		<hr class="about-rule">
+		<p>Hi! I'm Matthew Schafer; an Australian software developer who loves to explore the various possibilities of technology.</p>
+		<p>I have always had an interest in computers, and this interest has led me to where I am today. I have been programming for over <%= new Date().getFullYear() - 2012 %> years, from programming Flash buttons in ActionScript, all the way up to now; where I am extracting all of the high performance computing I can get from the hardware.</p>
+		<p>My main interest now is in graphics and game development. However, I have dabbled in nearly every aspect there is in software engineering - from making my own logic gates with transistors, programming embedded PCBs, making high-performance graphics applications/games, creating desktop/mobile applications, data science/visualisation, and both front and back-end web development.</p>
+		<p>I have a Bachelor's degree in Computer Science, and I am always willing to learn new things and expand my knowledge.</p>
+		<p>Feel free to check out my projects on <a class="about-link" href="https://github.com/LucidSigma">GitHub</a>!</p>
+		<hr class="about-rule">
 	</section>
 
 	<section id="skills">
+		<div id="skillsInfo">
+			<h2 class="skills-header">Technical Skillset</h2>
+			<hr class="skills-rule">
 
+			<div class="skills-container">
+				<div class="skills-grid skills-languages-grid">
+					<h4 class="skills-subheader">Languages</h4>
+					
+					<h6 class="skillset-subheader">Compiled/JIT</h6>
+					<div class="skillset-list">
+						<img class="skill-icon" src="/images/skills/c.png" title="C" alt="C">
+						<img class="skill-icon" src="/images/skills/cpp.png" title="C++" alt="C++">
+						<img class="skill-icon" src="/images/skills/rust.png" title="Rust" alt="Rust">
+						<img class="skill-icon" src="/images/skills/cs.png" title="C#" alt="C#">
+						<img class="skill-icon" src="/images/skills/java.png" title="Java" alt="Java">
+					</div>
+
+					<h6 class="skillset-subheader">Interpreted</h6>
+					<div class="skillset-list">
+						<div class="skill-icon">JavaScript</div>
+						<div class="skill-icon">TypeScript</div>
+						<div class="skill-icon">Python</div>
+						<div class="skill-icon">Lua</div>
+						<div class="skill-icon">PHP</div>
+						<div class="skill-icon">Ruby</div>
+					</div>
+
+					<h6 class="skillset-subheader">Functional</h6>
+					<div class="skillset-list">
+						<div class="skill-icon">F#</div>
+						<div class="skill-icon">Haskell</div>
+					</div>
+
+					<h6 class="skillset-subheader">Other</h6>
+					<div class="skillset-list">
+						<div class="skill-icon">HTML</div>
+						<div class="skill-icon">CSS</div>
+						<div class="skill-icon">Sass/SCSS</div>
+						<div class="skill-icon">SQL</div>
+						<div class="skill-icon">GLSL</div>
+					</div>
+				</div>
+
+				<div class="skills-grid skills-libraries-grid">
+					<h4 class="skills-subheader">Libraries/Frameworks</h4>
+
+					<h6 class="skillset-subheader">Games/Graphics</h6>
+					<div class="skillset-list">
+						<div class="skill-icon">SDL</div>
+						<div class="skill-icon">SFML</div>
+						<div class="skill-icon">OpenGL</div>
+						<div class="skill-icon">Vulkan</div>
+						<div class="skill-icon">WebGL</div>
+						<div class="skill-icon">OpenAL</div>
+					</div>
+
+					<h6 class="skillset-subheader">Front-end Web</h6>
+					<div class="skillset-list">
+						<div class="skill-icon">jQuery</div>
+						<div class="skill-icon">Bootstrap</div>
+						<div class="skill-icon">Semantic UI</div>
+					</div>
+
+					<h6 class="skillset-subheader">Back-end Web</h6>
+					<div class="skillset-list">
+						<div class="skill-icon">Node.js</div>
+						<div class="skill-icon">Express.js</div>
+						<div class="skill-icon">MongoDB/Mongoose</div>
+						<div class="skill-icon">Ruby on Rails</div>
+					</div>
+				</div>
+
+				<div class="skills-grid skills-tools-grid">
+					<h4 class="skills-subheader">Tools/Systems</h4>
+
+					<h6 class="skillset-subheader">Editors/IDEs</h6>
+					<div class="skillset-list">
+						<div class="skill-icon">Visual Studio</div>
+						<div class="skill-icon">Visual Studio Code</div>
+					</div>
+
+					<h6 class="skillset-subheader">Version Control</h6>
+					<div class="skillset-list">
+						<div class="skill-icon">Git</div>
+					</div>
+
+					<h6 class="skillset-subheader">Operating Systems</h6>
+					<div class="skillset-list">
+						<div class="skill-icon">Windows</div>
+						<div class="skill-icon">Linux (Ubuntu, Xubuntu, and Debian)</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section id="contact">
@@ -40,16 +142,25 @@
 	<footer>
 
 	</footer>
-
-	<script src="/scripts/vendor/three.min.js"></script>
-	<script src="/scripts/vendor/Detector.js"></script>
-	<script src='/scripts/vendor/postprocessing/EffectComposer.js'></script>
-	<script src='/scripts/vendor/postprocessing/RenderPass.js'></script>
-	<script src='/scripts/vendor/postprocessing/ShaderPass.js'></script>
-	<script src='/scripts/vendor/shaders/CopyShader.js'></script>
-	<script src='/scripts/vendor/shaders/VignetteShader.js'></script>
-	<script src="/scripts/vendor/ImprovedNoise.js"></script>
-	<script src="/scripts/meshTerrain.js" type="text/javascript"></script>
 </div>
+
+<!-- Scripts for handling window resize and absolute elements. -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="/scripts/resize.js" type="text/javascript"></script>
+
+<!-- Scripts for procedural terrain mesh. -->
+<script src="/scripts/vendor/three.min.js" type="text/javascript"></script>
+<script src="/scripts/vendor/Detector.js" type="text/javascript"></script>
+<script src="/scripts/vendor/postprocessing/EffectComposer.js" type="text/javascript"></script>
+<script src="/scripts/vendor/postprocessing/RenderPass.js" type="text/javascript"></script>
+<script src="/scripts/vendor/postprocessing/ShaderPass.js" type="text/javascript"></script>
+<script src="/scripts/vendor/shaders/CopyShader.js" type="text/javascript"></script>
+<script src="/scripts/vendor/shaders/VignetteShader.js" type="text/javascript"></script>
+<script src="/scripts/vendor/ImprovedNoise.js" type="text/javascript"></script>
+<script src="/scripts/meshTerrain.js" type="text/javascript"></script>
+
+<!-- Scripts for polygon particles. -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" type="text/javascript"></script>
+<script src="/scripts/polygons.js" type="text/javascript"></script>
 
 <%- include("partials/footer") %>

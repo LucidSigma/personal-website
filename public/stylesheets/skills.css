@@ -1,0 +1,86 @@
+.skills-header {
+	font-size: 2.5rem;
+	padding-top: 20px;
+}
+
+.skills-rule {
+	width: 75%;
+	margin-bottom: 30px;
+}
+
+.skills-container {
+	display: flex;
+
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.skills-grid {
+	width: 30%;
+	padding-bottom: 20px;
+}
+
+.skills-languages-grid {
+	order: 1;
+}
+
+.skills-libraries-grid {
+	order: 2;
+}
+
+.skills-tools-grid {
+	order: 3;
+}
+
+.skills-subheader {
+	font-size: 1.75rem;
+}
+
+.skillset-subheader {
+	font-size: 1.2rem;
+	margin: 10px auto;
+}
+
+.skillset-list {
+	display: flex;
+
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.skill-icon {
+	width: 16%;
+	margin: 0 0.3%;
+}
+
+#skills {
+	background: linear-gradient(180deg, #050540, #000010);
+	background-color: #050540;
+}
+
+#skillsInfo {
+	position: absolute;
+	width: 100%;
+
+	color: white;
+	text-align: center;
+
+	margin: auto;
+	padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.skills-rule {
+		display: none;
+	}
+
+	.skills-grid {
+		width: 80%;
+		margin-bottom: 20px;
+	}
+}

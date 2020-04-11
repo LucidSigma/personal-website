@@ -28,6 +28,7 @@ const noise = {
 };
 
 const rendererDiv = document.getElementById("meshTerrain");
+const overRendererData = document.getElementById("biography");
 
 let stepCount = 0;
 
@@ -35,7 +36,7 @@ initialise();
 render();
 
 function initialise() {
-	camera = new THREE.PerspectiveCamera(60, rendererDiv.offsetWidth / rendererDiv.offsetHeight, 1, 10000);
+	camera = new THREE.PerspectiveCamera(60, overRendererData.offsetWidth / overRendererData.offsetHeight, 1, 10000);
 	camera.position.z = 3000;
 
 	scene = new THREE.Scene();
@@ -66,7 +67,7 @@ function initialise() {
 	renderer = new THREE.WebGLRenderer({
 		antialias: true
 	});
-	renderer.setSize(rendererDiv.offsetWidth, rendererDiv.offsetHeight);
+	renderer.setSize(overRendererData.offsetWidth, overRendererData.offsetHeight);
 	renderer.setClearColor(0x252560);
 
 	rendererDiv.appendChild(renderer.domElement);
@@ -111,9 +112,9 @@ function render() {
 }
 
 function onWindowResize() {
-	camera.aspect = rendererDiv.offsetWidth / rendererDiv.offsetHeight;
+	camera.aspect = overRendererData.offsetWidth / overRendererData.offsetHeight;
 	camera.updateProjectionMatrix();
 
-	renderer.setSize(rendererDiv.offsetWidth, rendererDiv.offsetHeight);
-	effects.composer.setSize(rendererDiv.offsetWidth, rendererDiv.offsetHeight);
+	renderer.setSize(overRendererData.offsetWidth, overRendererData.offsetHeight);
+	effects.composer.setSize(overRendererData.offsetWidth, overRendererData.offsetHeight);
 }

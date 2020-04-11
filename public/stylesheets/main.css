@@ -7,12 +7,16 @@ body {
 	font-family: "Lato", sans-serif;
 }
 
+hr {
+	border-color: white;
+}
+
 .centered-text {
 	text-align: center;
 }
 
 .container.main {
-	background-color: #442244;
+	background-color: #1B0054;
 	margin-top: 0;
 }
 

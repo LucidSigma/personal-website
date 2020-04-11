@@ -12,10 +12,10 @@ import mainController from "./controllers/mainController.js";
 const app = express();
 
 app.set("view engine", "ejs");
-app.set("views", path.join(path.resolve(), "/public/views/"));
+app.set("views", path.join(path.resolve(), "public", "views"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(path.resolve(), "/public/")));
+app.use(express.static(path.join(path.resolve(), "public")));
 
 // MIDDLEWARE
 app.use((request, response, next) => {

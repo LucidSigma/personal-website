@@ -6,7 +6,8 @@ const router = express.Router();
 
 router.get("/", (request, response) => {
 	response.render("home",  {
-		additionalStyles: ["biography", "about", "skills"]
+		additionalStyles: ["biography", "about", "skills", "contact"],
+		email: "lucidsigma17@gmail.com"
 	});
 });
 

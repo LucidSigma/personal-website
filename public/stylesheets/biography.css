@@ -1,3 +1,7 @@
+#downIcon {
+	margin: 0;
+}
+
 .biography-section {
 	width: 40%;
 	height: 75vh;
@@ -42,6 +46,8 @@
 #meshTerrain {
 	width: 100%;
 	height: 100vh;
+
+	background: linear-gradient(180deg, black, #1B0054);;
 }
 
 #biography {
@@ -68,6 +74,11 @@
 
 #biographyInfo {
 	order: 2;
+}
+
+#biographyDownButton {
+	height: auto;
+	order: 3;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -102,5 +113,9 @@
 @media only screen and (max-width: 600px) {
 	.biography-name {
 		font-size: 2.0rem;
+	}
+
+	#biographyDownButton {
+		display: none;
 	}
 }

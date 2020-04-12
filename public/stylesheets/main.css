@@ -15,6 +15,35 @@ hr {
 	border-color: white;
 }
 
+canvas {
+	height: inherit;
+}
+
+footer {
+	background-color: white;
+	padding: 16px;
+}
+
+footer a {
+	color: lightskyblue;
+	font-size: 1.2rem;
+
+	transition: 500ms;
+}
+
+footer a:hover {
+	color: #160036;
+	text-decoration: underline;
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+footer p small {
+	font-size: 0.9rem;
+}
+
 .centered-text {
 	text-align: center;
 }
@@ -24,15 +53,15 @@ hr {
 	margin-top: 0;
 }
 
+.interpunct {
+	margin: 0 10px;
+}
+
 #navbar {
 	background-color: #160036;
 	
 	border-radius: 0;
 	margin-bottom: 0;
-}
-
-canvas {
-	height: inherit;
 }
 
 @media only screen and (max-width: 800px) {

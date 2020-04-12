@@ -12,6 +12,8 @@
 .about-link {
 	color: white;
 	text-decoration: white dotted underline;
+
+	transition: 500ms;
 }
 
 .about-link:hover {

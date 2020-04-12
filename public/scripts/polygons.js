@@ -1,6 +1,6 @@
 requestAnimationFrame(update);
 
-particlesJS("skills", {
+particlesJS("polygons", {
 	"particles": {
 		"number": {
 			"value": 96,

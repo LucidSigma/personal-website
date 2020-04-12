@@ -1,6 +1,6 @@
 .skills-header {
 	font-size: 2.5rem;
-	padding-top: 20px;
+	text-align: center;
 }
 
 .skills-rule {
@@ -41,10 +41,13 @@
 
 .skills-subheader {
 	font-size: 1.75rem;
+	text-align: center;
 }
 
 .skillset-subheader {
 	font-size: 1.2rem;
+	text-align: center;
+
 	margin: 10px auto;
 }
 
@@ -62,23 +65,21 @@
 	margin: 0 0.3%;
 }
 
-#skills {
+#polygons {
 	width: 100%;
 
 	background: linear-gradient(180deg, #050540, #000010);
 	background-color: #050540;
 }
 
-#skillsInfo {
+#skills {
 	position: absolute;
 	width: 100%;
 
 	color: white;
-	text-align: center;
 
-	margin: auto;
-	padding-top: 8vh;
-	padding-bottom: 8vh;
+	padding-top: 2vh;
+	padding-bottom: 4vh;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -89,6 +90,10 @@
 	.skills-grid {
 		width: 80%;
 		margin-bottom: 20px;
+	}
+
+	#polygons canvas {
+		display: none;
 	}
 }
 

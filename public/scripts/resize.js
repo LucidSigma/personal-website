@@ -1,7 +1,7 @@
 const resizeCanvases = () => {
 	$("#meshTerrain").outerHeight($("#biography").outerHeight());
-	$("#skills").outerHeight($("#skillsInfo").outerHeight());
+	$("#polygons").outerHeight($("#skills").outerHeight());
 };
 
-$(document).ready(resizeCanvases);
+$(window).on("load", resizeCanvases);
 $(window).resize(resizeCanvases);

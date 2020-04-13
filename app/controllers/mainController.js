@@ -7,7 +7,10 @@ const router = express.Router();
 router.get("/", (request, response) => {
 	response.render("home",  {
 		additionalStyles: ["biography", "about", "skills", "contact"],
-		email: "lucidsigma17@gmail.com"
+		email: {
+			name: "lucidsigma17",
+			domain: "gmail"
+		}
 	});
 });
 
@@ -20,7 +23,7 @@ router.get("/portfolio", (request, response) => {
 });
 
 router.get("/resume", (request, response) => {
-	response.locals.title += " - Resume";
+	response.locals.title += " - R\u00E9sum\u00E9";
 
 	response.render("resume", {
 		additionalStyles: []

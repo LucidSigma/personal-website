@@ -2,7 +2,48 @@
 <%- include("partials/navbar") %>
 
 <div class="container main">
+	<h1 class="projects-header">My Projects</h1>
+	<div id="projectList">
+		<p class="github-blurb">For a full list of projects, please visit my <a class="github-link" href="https://github.com/LucidSigma" target="_blank">GitHub</a> page.</p>
 	
+		<% for (let i = 0; i < projects.length; ++i) { %>
+			<% const project = projects[i] %>
+			<div class="project">
+				<div class="project-info <%= i % 2 === 0 ? "order-1" : "order-2" %>">
+					<h3 class="project-header"><%= project.name %></h3>
+
+					<% let technologiesUsed = "" %>
+					<% for (let j = 0; j < project.technologiesUsed.length; ++j) { %>
+						<% technologiesUsed += project.technologiesUsed[j] %>
+
+						<% if (j !== project.technologiesUsed.length - 1) { %>
+							<% technologiesUsed += ", " %>
+						<% } %>
+					<% } %>
+
+					<div class="project-links">
+						<a class="tiny ui violet button" href="<%= project.githubLink %>" target="_blank">Check it out on GitHub!</a>
+
+						<% if (project.hostedLink !== undefined) { %>
+							<a class="tiny ui violet button" href="<%= project.hostedLink %>" target="_blank">Visit it!</a>
+						<% } %>
+					</div>
+
+					<hr class="project-rule">
+					<p><strong>Technologies used:</strong> <%= technologiesUsed %></p>
+					
+					<% for (const paragraph of project.description) { %>
+						<p><%= paragraph %></p>
+					<% } %>
+				</div>
+
+				<div class="project-image-container <%= i % 2 === 0 ? "order-2" : "order-1" %>">
+					<img class="project-image" src="/images/projects/<%= project.image %>" title="<%= project.name %>" alt="<%= project.name %>">
+				</div>
+			</div>
+		<% } %>
+	</div>
+
 	<%- include("partials/footer") %>
 </div>
 

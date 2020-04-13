@@ -1,6 +1,8 @@
 "use strict";
 
 import express from "express";
+import jsonFile from "jsonfile";
+import path from "path";
 
 const router = express.Router();
 
@@ -14,11 +16,13 @@ router.get("/", (request, response) => {
 	});
 });
 
-router.get("/portfolio", (request, response) => {
+router.get("/portfolio", async (request, response) => {
 	response.locals.title += " - Portfolio";
+	const json = await jsonFile.readFile(path.join(path.resolve(), "app", "data", "projects.json"));
 
 	response.render("portfolio", {
-		additionalStyles: []
+		additionalStyles: ["portfolio"],
+		projects: json["projects"]
 	});
 });
 

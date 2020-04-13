@@ -1,0 +1,78 @@
+{
+	"projects": [
+		{
+			"name": "Vulkan Terrain Generator",
+			"githubLink": "https://github.com/LucidSigma/vulkan-terrain-generator",
+			"description": [
+				"This is an infinite procedural 3D terrain generator made with C++17 and the Vulkan API by Khronos. The SDL framework is also used for windowing, creating a Vulkan instance, and other utilities.",
+				"The terrain is divided up into chunks, and only the chunks within range are rendered. The applicaiton also makes use of a custom-made 3D camera.",
+				"The terrain is generated using simplex noise (courtesy of the GLM library). There is also a basic real-time diffuse lighting effect (which gives the terrain it's \"toon-like\" look.",
+				"Since this was made with the Vulkan API, it had a lot of boilerplate code - which required an in-depth understanding of low-level computer graphics, concurrent processing, and memory management/pooling."
+			],
+			"technologiesUsed": ["C++", "SDL", "Vulkan"],
+			"image": "vulkanTerrainGenerator.png"
+		},
+		{
+			"name": "Personal Website",
+			"githubLink": "https://github.com/LucidSigma/personal-website",
+			"hostedLink": "https://www.matty-o.dev",
+			"description": [
+				"This is my personal website (that you are on now). It exists simple to show off who I am, what my technological skills are, and what I have created with them.",
+				"It uses a Node.js/Express.js backend, and the front-end is basic HTML/CSS/JavaScript, powered by jQuery and Semantic UI to make development easier.",
+				"The most impressive feature (in my opinion) is the prodecural mesh terrain on the home page. This was made with Three.js/WebGL using my existing computer graphics experience (I have done similar terrain generation before).",
+				"The site also demonstrates usage of CSS flexbox, and also includes a Particles.js canvas as well."
+			],
+			"technologiesUsed": ["HTML", "CSS", "JavaScript", "Semantic UI", "jQuery", "WebGL", "Three.js", "Particles.js", "Node.js", "Express.js"],
+			"image": "personalWebsite.png"
+		},
+		{
+			"name": "WorldBuilder",
+			"githubLink": "https://github.com/LucidSigma/worldbuilder",
+			"hostedLink": "https://young-waters-53007.herokuapp.com",
+			"description": [
+				"WorldBuilder is a Node.js application that allows users to create their own planets. The site features a basic user authentication system (using Passport) to allow users to log in.",
+				"Planets have specific properties and are stored in a database (powered by MongoDB). Comments can also be posted on planet pages. Users can also edit and delete planets/comments (but only their own, unless they're an admin).",
+				"The site demonstrates usage of RESTful routing and MVC architecture. The front-end is basic HTML/CSS/JavaScript, and Bootstrap is used to help with the styling."
+			],
+			"technologiesUsed": ["HTML", "CSS", "JavaScript", "Bootstrap", "Particles.js", "Node.js", "Express.js", "MongoDB/Mongoose"],
+			"image": "worldbuilder.png"
+		},
+		{
+			"name": "Voxel Engine",
+			"githubLink": "https://github.com/LucidSigma/Voxel-Engine",
+			"description": [
+				"This is a voxel engine (videlicit, a lightweight Minecraft clone) made with C++17 and OpenGL 4.6. SDL was also used to help with windowing and creating an OpenGL context in C++.",
+				"The application generates the terrain using simplex noise in manageable chunks. These chunks can be can be edited by breaking and placing blocks. Each block has its texture loaded from a tilemap.",
+				"A significant amount of linear algebra was used to help with the 3D camera, as well as unprojecting the coordinates to place/break blocks (to help know what the camera was pointing at).",
+				"The application has a mini game engine built into it, that streamlines a lot of the processes of the game - from scene handling, to input, rendering, and object updates.",
+				"The engine also includes a custom-made font renderer (using FreeType), the ability to capture screenshots, and has a 3D positional audio system (using OpenAL)."
+			],
+			"technologiesUsed": ["C++", "SDL", "OpenGL", "OpenAL"],
+			"image": "voxelEngine.png"
+		},
+		{
+			"name": "Web Tic-Tac-Toe",
+			"githubLink": "https://github.com/LucidSigma/Web-Tic-Tac-Toe",
+			"description": [
+				"A basic Tic-Tac-Toe game made in the web browser. It is all front-end, making use of HTML, CSS, JavaScript, and jQuery.",
+				"The game grid is laid out using CSS flexbox.",
+				"There are three difficulties: easy (which places randomly), medium (which tries to win, block, or place in the next best cell), and hard (which uses a minimax algorithm, making it unbeatable).",
+				"This was just a simple project made to test out my front-end skills before I moved onto back-end technologies."
+			],
+			"technologiesUsed": ["HTML", "CSS", "JavaScript", "jQuery"],
+			"image": "webTicTacToe.png"
+		},
+		{
+			"name": "OpenGL Pong",
+			"githubLink": "https://github.com/LucidSigma/OpenGL-Pong",
+			"description": [
+				"This is a simple pong game made with C++17, SDL2, and OpenGL 4.6",
+				"Although the game itself is simple, the graphics engine makes use of some advanced features.",
+				"The game includes screen-shaking postprocessing effects, makes use of a stencil buffer for outlines, and has its own particle engine.",
+				"There is also a 3D positional audio system made with OpenAL, a font renderer, and the ability to capture screenshots."
+			],
+			"technologiesUsed": ["C++", "SDL", "OpenGL", "OpenAL"],
+			"image": "openglPong.png"
+		}
+	]
+}

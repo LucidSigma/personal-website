@@ -110,6 +110,12 @@
 	}
 }
 
+@media only screen and (max-width: 800px) {
+	.biography-text {
+		text-align: center;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	.biography-name {
 		font-size: 2.0rem;

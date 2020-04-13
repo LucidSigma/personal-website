@@ -53,6 +53,10 @@ footer p small {
 	margin-top: 0;
 }
 
+.ui.button {
+	transition: 500ms;
+}
+
 .interpunct {
 	margin: 0 10px;
 }

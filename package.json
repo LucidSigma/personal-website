@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "1.0.0",
   "description": "My personal portfolio website.",
-  "main": "app/index.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node app/index.js",

@@ -14,13 +14,17 @@ router.get("/", (request, response) => {
 router.get("/portfolio", (request, response) => {
 	response.locals.title += " - Portfolio";
 
-	response.render("portfolio");
+	response.render("portfolio", {
+		additionalStyles: []
+	});
 });
 
 router.get("/resume", (request, response) => {
 	response.locals.title += " - Resume";
 
-	response.render("resume");
+	response.render("resume", {
+		additionalStyles: []
+	});
 });
 
 export default router;

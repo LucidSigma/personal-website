@@ -20,9 +20,7 @@ app.use(express.static(path.join(path.resolve(), "public")));
 // MIDDLEWARE
 app.use((request, response, next) => {
 	response.locals.title = "Matt Schafer";
-	// REMEMBER TO UPDATE THE TITLE!
-	// RESIZE IMAGES!
-
+	
 	next();
 });
 

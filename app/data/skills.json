@@ -1,0 +1,204 @@
+{
+	"skills": {
+		"languages": [
+			{
+				"header": "Compiled/JIT",
+				"list": [
+					{
+						"name": "C",
+						"image": "c.png"
+					},
+					{
+						"name": "C++",
+						"image": "cpp.png"
+					},
+					{
+						"name": "Rust",
+						"image": "rust.png"
+					},
+					{
+						"name": "C#",
+						"image": "cs.png"
+					},
+					{
+						"name": "Java",
+						"image": "java.png"
+					}
+				]
+			},
+			{
+				"header": "Interpreted",
+				"list": [
+					{
+						"name": "JavaScript",
+						"image": "javascript.png"
+					},
+					{
+						"name": "TypeScript",
+						"image": "typescript.png"
+					},
+					{
+						"name": "Python",
+						"image": "python.png"
+					},
+					{
+						"name": "Lua",
+						"image": "lua.png"
+					},
+					{
+						"name": "PHP",
+						"image": "php.png"
+					},
+					{
+						"name": "Ruby",
+						"image": "ruby.png"
+					}
+				]	
+			},
+			{
+				"header": "Functional",
+				"list": [
+					{
+						"name": "F#",
+						"image": "fs.png"
+					},
+					{
+						"name": "Haskell",
+						"image": "haskell.png"
+					}
+				]
+			},
+			{
+				"header": "Other",
+				"list": [
+					{
+						"name": "HTML",
+						"image": "html.png"
+					},
+					{
+						"name": "CSS",
+						"image": "css.png"
+					},
+					{
+						"name": "Sass/SCSS",
+						"image": "sass.png"
+					},
+					{
+						"name": "SQL",
+						"image": "sql.png"
+					},
+					{
+						"name": "GLSL",
+						"image": "glsl.png"
+					}
+				]
+			}
+		],
+		"libraries": [
+			{
+				"header": "Games/Graphics",
+				"list": [
+					{
+						"name": "SDL",
+						"image": "sdl.png"
+					},
+					{
+						"name": "SFML",
+						"image": "sfml.png"
+					},
+					{
+						"name": "OpenGL",
+						"image": "opengl.png"
+					},
+					{
+						"name": "Vulkan",
+						"image": "vulkan.png"
+					},
+					{
+						"name": "WebGL",
+						"image": "webgl.png"
+					},
+					{
+						"name": "OpenAL",
+						"image": "openal.png"
+					}
+				]
+			},
+			{
+				"header": "Front-end Web",
+				"list": [
+					{
+						"name": "jQuery",
+						"image": "jquery.png"
+					},
+					{
+						"name": "Bootstrap",
+						"image": "bootstrap.png"
+					},
+					{
+						"name": "Semantic UI",
+						"image": "semanticui.png"
+					}
+				]
+			},
+			{
+				"header": "Back-end Web",
+				"list": [
+					{
+						"name": "Node.js",
+						"image": "nodejs.png"
+					},
+					{
+						"name": "Express.js",
+						"image": "expressjs.png"
+					},
+					{
+						"name": "MongoDB/Mongoose",
+						"image": "mongodb.png"
+					},
+					{
+						"name": "Ruby on Rails",
+						"image": "rubyonrails.png"
+					}
+				]
+			}
+		],
+		"tools": [
+			{
+				"header": "Editors/Systems",
+				"list": [
+					{
+						"name": "Visual Studio",
+						"image": "visualstudio.png"
+					},
+					{
+						"name": "Visual Studio Code",
+						"image": "vscode.png"
+					}
+				]
+			},
+			{
+				"header": "Version Control",
+				"list": [
+					{
+						"name": "Git",
+						"image": "git.png"
+					}
+				]
+			},
+			{
+				"header": "Operating Systems",
+				"list": [
+					{
+						"name": "Windows",
+						"image": "windows.png"
+					},
+					{
+						"name": "Linux (Ubuntu, Xubuntu, and Debian)",
+						"image": "linux.png"
+					}
+				]
+			}	
+		]
+	}
+}

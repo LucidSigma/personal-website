@@ -6,9 +6,12 @@ import path from "path";
 
 const router = express.Router();
 
-router.get("/", (request, response) => {
+router.get("/", async (request, response) => {
+	const json = await jsonFile.readFile(path.join(path.resolve(), "app", "data", "skills.json"));
+
 	response.render("home",  {
 		additionalStyles: ["biography", "about", "skills", "contact"],
+		skills: json["skills"],
 		email: {
 			name: "lucidsigma17",
 			domain: "gmail"

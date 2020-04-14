@@ -10,6 +10,8 @@
 
 .github-blurb {
 	color: #1B0054;
+	font-size: 1.5rem;
+
 	margin-bottom: 0;
 }
 
@@ -80,6 +82,7 @@
 	max-height: 100%;
 
 	border-radius: 8px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .project-links {
@@ -101,8 +104,9 @@
 
 	width: 80%;
 	color: black;
-	background-color: white;
+	background: linear-gradient(#af94ff, white);
 
+	border: 4px solid white;
 	border-radius: 20px;
 	margin: auto;
 	margin-bottom: 2vh;

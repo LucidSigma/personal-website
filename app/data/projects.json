@@ -6,7 +6,7 @@
 			"description": [
 				"This is an infinite procedural 3D terrain generator made with C++17 and the Vulkan API by Khronos. The SDL framework is also used for windowing, creating a Vulkan instance, and other utilities.",
 				"The terrain is divided up into chunks, and only the chunks within range are rendered. The applicaiton also makes use of a custom-made 3D camera.",
-				"The terrain is generated using simplex noise (courtesy of the GLM library). There is also a basic real-time diffuse lighting effect (which gives the terrain it's \"toon-like\" look.",
+				"The terrain is generated using simplex noise (courtesy of the GLM library). There is also a basic real-time diffuse lighting effect (which gives the terrain its \"toon-like\" look.",
 				"Since this was made with the Vulkan API, it had a lot of boilerplate code - which required an in-depth understanding of low-level computer graphics, concurrent processing, and memory management/pooling."
 			],
 			"technologiesUsed": ["C++", "SDL", "Vulkan"],
@@ -73,6 +73,19 @@
 			],
 			"technologiesUsed": ["C++", "SDL", "OpenGL", "OpenAL"],
 			"image": "openglPong.png"
+		},
+		{
+			"name": "Itty Bitty Apocalypse",
+			"githubLink": "https://github.com/LucidSigma/Itty-Bitty-Apocalypse",
+			"hostedLink": "https://lucidsigma.itch.io/itty-bitty-apocalypse",
+			"description": [
+				"Itty Bitty Apocalypse is a command-line console game made with C#/.NET for the 2018 FloppyJam.",
+				"The game is a top-down turn-based zombie survival game. You fight off zombies, collect provisions and other victuals, and try to survive.",
+				"It has an event system each day and both melee and ranged attacks.",
+				"There are lots of maps and weapons, so there is a lot of replayability despite the game's simplicity."
+			],
+			"technologiesUsed": ["C#", ".NET"],
+			"image": "ittyBittyApocalypse.png"
 		}
 	]
 }

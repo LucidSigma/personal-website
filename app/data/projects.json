@@ -15,7 +15,7 @@
 		{
 			"name": "Personal Website",
 			"githubLink": "https://github.com/LucidSigma/personal-website",
-			"hostedLink": "https://www.matty-o.xyz",
+			"hostedLink": "http://www.matty-o.xyz",
 			"description": [
 				"This is my personal website (that you are on now). It exists simple to show off who I am, what my technological skills are, and what I have created with them.",
 				"It uses a Node.js/Express.js backend, and the front-end is basic HTML/CSS/JavaScript, powered by jQuery and Semantic UI to make development easier.",

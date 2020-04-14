@@ -29,11 +29,15 @@ router.get("/portfolio", async (request, response) => {
 	});
 });
 
-router.get("/resume", (request, response) => {
+router.get("/resume", async (request, response) => {
 	response.locals.title += " - R\u00E9sum\u00E9";
+	const resumeJSON = await jsonFile.readFile(path.join(path.resolve(), "app", "data", "resume.json"));
+	const skillsJSON = await jsonFile.readFile(path.join(path.resolve(), "app", "data", "skills.json"));
 
 	response.render("resume", {
-		additionalStyles: []
+		additionalStyles: ["resume", "portfolio"],
+		resume: resumeJSON["resume"],
+		skills: skillsJSON["skills"]
 	});
 });
 

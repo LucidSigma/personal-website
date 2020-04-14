@@ -1,0 +1,22 @@
+{
+	"resume": {
+		"name": "Matthew Schafer",
+		"locale": "Toowoomba, Queensland, Australia",
+		"email": "lucidsigma17@gmail.com",
+		"education": {
+			"university": "University of Southern Queensland",
+			"locale": "Toowoomba, Queensland, Australia",
+			"major": "Computer Science",
+			"minor": "Applied Mathematics",
+			"timespan": {
+				"start": 2017,
+				"end": 2020
+			},
+			"gpa": {
+				"result": 6.54,
+				"max": 7.00
+			},
+			"coursework": ["programming", "algorithms/data structures", "embedded system design/development", "operating systems", "networking", "web technology", "algebra/calculus", "differential equations", "operational research"]
+		}
+	}
+}

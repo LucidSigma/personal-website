@@ -62,6 +62,12 @@ footer p small {
 	margin: 0 10px;
 }
 
+.subpage-header {
+	color: white;
+	font-size: 3rem;
+	text-align: center;
+}
+
 #navbar {
 	background-color: #160036;
 	

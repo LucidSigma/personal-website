@@ -2,8 +2,101 @@
 <%- include("partials/navbar") %>
 
 <div class="container main">
+	<h1 class="subpage-header">R&eacute;sum&eacute;</h1>
+	<div id="resume">
+		<a class="ui violet button resume-download-button" href="/resources/online_resume.pdf" download="MatthewSchaferResume.pdf">Click here for a PDF download.</a>
+		<div class="resume-section">
+			<h3 class="resume-header">Basic Information</h3>
+			<p><strong>Name:</strong> <%= resume.name %></p>
+			<p><strong>Locale:</strong> <%= resume.locale %></p>
+			<p><strong>Email:</strong> <span onclick="revealEmailAddress(this);">Click to reveal.</span></p>
+		</div>
+
+		<div class="resume-section">
+			<h3 class="resume-header">Skillset</h3>
+		
+			<h5 class="resume-subheader">Languages</h5>
+			<% for (const languageSet of skills["languages"]) { %>
+				<% let languageList = "" %>
 	
+				<% for (let i = 0; i < languageSet.list.length; ++i) { %>
+					<% languageList += languageSet.list[i].name %>
+	
+					<% if (i !== languageSet.list.length - 1) { %>
+						<% languageList += ", " %>
+					<% } %>
+				<% } %>
+	
+				<p><strong><%= languageSet.header %>:</strong> <%= languageList %></p>
+			<% } %>
+	
+			<h5 class="resume-subheader">Libraries/Frameworks</h5>
+			<% for (const librarySet of skills["libraries"]) { %>
+				<% let libraryList = "" %>
+	
+				<% for (let i = 0; i < librarySet.list.length; ++i) { %>
+					<% libraryList += librarySet.list[i].name %>
+	
+					<% if (i !== librarySet.list.length - 1) { %>
+						<% libraryList += ", " %>
+					<% } %>
+				<% } %>
+	
+				<p><strong><%= librarySet.header %>:</strong> <%= libraryList %></p>
+			<% } %>
+	
+			<h5 class="resume-subheader">Tools/Systems</h5>
+			<% for (const toolSet of skills["tools"]) { %>
+				<% let toolList = "" %>
+	
+				<% for (let i = 0; i < toolSet.list.length; ++i) { %>
+					<% toolList += toolSet.list[i].name %>
+	
+					<% if (i !== toolSet.list.length - 1) { %>
+						<% toolList += ", " %>
+					<% } %>
+				<% } %>
+	
+				<p><strong><%= toolSet.header %>:</strong> <%= toolList %></p>
+			<% } %>
+		</div>
+		
+		<div class="resume-section">
+			<h3 class="resume-header">Professional Experience</h3>
+			<p>I currently do not have any professional experience and am looking for my first career.</p>
+		</div>
+		
+		<div class="resume-section">
+			<h3 class="resume-header">Education</h3>
+			<p><strong class="university-name"><%= resume.education.university %></strong> <small>(<%= resume.education.locale %>)</small><span class="education-timespan"><%= resume.education.timespan.start %> - <%= resume.education.timespan.end %></span></p>
+			<p><strong>Major:</strong> <%= resume.education.major %> <small>(GPA: <%= resume.education.gpa.result %> / <%= resume.education.gpa.max.toFixed(2) %>)</small></p>
+			<p><strong>Minor:</strong> <%= resume.education.minor %></p>
+
+			<% let courseworkList = "" %>
+			
+			<% for (let i = 0; i < resume.education.coursework.length; ++i) { %>
+				<% courseworkList += resume.education.coursework[i] %>
+
+					<% if (i !== resume.education.coursework.length - 1) { %>
+						<% courseworkList += ", " %>
+					<% } %>
+
+					<% if (i === resume.education.coursework.length - 2) { %>
+						<% courseworkList += "and " %>
+					<% } %>
+			<% } %>
+
+			<p>Coursework included <%= courseworkList %>.</p>
+		</div>
+	</div>
+
 	<%- include("partials/footer") %>
 </div>
+
+<script>
+	function revealEmailAddress(element) {
+		element.innerText = "<%= resume.email %>";
+	}
+</script>
 
 <%- include("partials/end") %>

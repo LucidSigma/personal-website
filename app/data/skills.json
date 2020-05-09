@@ -169,7 +169,7 @@
 		],
 		"tools": [
 			{
-				"header": "Editors/Systems",
+				"header": "Editors",
 				"list": [
 					{
 						"name": "Visual Studio",

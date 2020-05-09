@@ -90,6 +90,10 @@
 					{
 						"name": "GLSL",
 						"image": "glsl.png"
+					},
+					{
+						"name": "PowerShell",
+						"image": "powershell.png"
 					}
 				]
 			}
@@ -192,6 +196,10 @@
 					{
 						"name": "Windows",
 						"image": "windows.png"
+					},
+					{
+						"name": "macOS",
+						"image": "macos.png"
 					},
 					{
 						"name": "Linux (Ubuntu, Xubuntu, and Debian)",

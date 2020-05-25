@@ -65,6 +65,10 @@
 					{
 						"name": "Haskell",
 						"image": "haskell.png"
+					},
+					{
+						"name": "OCaml",
+						"image": "ocaml.png"
 					}
 				]
 			},

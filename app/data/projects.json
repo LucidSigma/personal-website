@@ -5,7 +5,7 @@
 			"githubLink": "https://github.com/LucidSigma/vulkan-terrain-generator",
 			"description": [
 				"This is an infinite procedural 3D terrain generator made with C++17 and the Vulkan API by Khronos. The SDL framework is also used for windowing, creating a Vulkan instance, and other utilities.",
-				"The terrain is divided up into chunks, and only the chunks within range are rendered. The applicaiton also makes use of a custom-made 3D camera.",
+				"The terrain is divided up into chunks, and only the chunks within range are rendered. The application also makes use of a custom-made 3D camera.",
 				"The terrain is generated using simplex noise (courtesy of the GLM library). There is also a basic real-time diffuse lighting effect (which gives the terrain its \"toon-like\" look).",
 				"Since this was made with the Vulkan API, it had a lot of boilerplate code - which required an in-depth understanding of low-level computer graphics, concurrent processing, and memory management/pooling."
 			],

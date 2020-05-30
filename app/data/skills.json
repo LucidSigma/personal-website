@@ -125,10 +125,6 @@
 					{
 						"name": "WebGL",
 						"image": "webgl.png"
-					},
-					{
-						"name": "OpenAL",
-						"image": "openal.png"
 					}
 				]
 			},
@@ -169,6 +165,15 @@
 						"image": "rubyonrails.png"
 					}
 				]
+			},
+			{
+				"header": "Other",
+				"list": [
+					{
+						"name": "OpenAL",
+						"image": "openal.png"
+					}
+				]
 			}
 		],
 		"tools": [
@@ -182,6 +187,19 @@
 					{
 						"name": "Visual Studio Code",
 						"image": "vscode.png"
+					}
+				]
+			},
+			{
+				"header": "Embedded/SBCs",
+				"list": [
+					{
+						"name": "Raspberry Pi",
+						"image": "raspberrypi.png"
+					},
+					{
+						"name": "Arduino",
+						"image": "arduino.png"
 					}
 				]
 			},

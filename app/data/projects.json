@@ -1,6 +1,18 @@
 {
 	"projects": [
 		{
+			"name": "Vulkan Solar System",
+			"githubLink": "https://github.com/LucidSigma/vulkan-solar-system",
+			"description": [
+				"This is an interaction 3D application that models the Solar System. It includes the Sun, all eight planets, five drawf planets, and Sedna; as well as some moons and rings.",
+				"It was made with C++ and Vulkan - which means a lot of boilerplate code was needed to set up the swapchain, framebuffers, and pipelines.",
+				"Each planet is an OBJ file, and is loaded with a texture. The Phong lighting model was used to give the planets shadows and specular highlights.",
+				"There is also a cubemap of the Milky Way galaxy in the background, and the application makes use of a 3D first-person camera."
+			],
+			"technologiesUsed": ["C++", "SDL", "Vulkan"],
+			"image": "vulkanSolarSystem.png"
+		},
+		{
 			"name": "Vulkan Terrain Generator",
 			"githubLink": "https://github.com/LucidSigma/vulkan-terrain-generator",
 			"description": [

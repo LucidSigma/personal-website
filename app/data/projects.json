@@ -87,6 +87,18 @@
 			"image": "openglPong.png"
 		},
 		{
+			"name": "Rust Snake",
+			"githubLink": "https://github.com/LucidSigma/rust-snake",
+			"description": [
+				"This is just a simple game of Snake, made with Rust.",
+				"There isn't much to it - as the snake, you will go around and eat the food that spawns in random locations.",
+				"Each piece you eat, the longer the snake gets; and if the snake collides with itself or the walls, it is game over.",
+				"I made this a project to get used to the Rust programming language. The Piston library is used for graphics."
+			],
+			"technologiesUsed": ["Rust"],
+			"image": "rustSnake.png"
+		},
+		{
 			"name": "Itty Bitty Apocalypse",
 			"githubLink": "https://github.com/LucidSigma/Itty-Bitty-Apocalypse",
 			"hostedLink": "https://lucidsigma.itch.io/itty-bitty-apocalypse",

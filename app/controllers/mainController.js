@@ -11,6 +11,8 @@ router.get("/", async (request, response) => {
 
 	response.render("home",  {
 		additionalStyles: ["biography", "about", "skills", "contact"],
+		favouriteLanguages: json["favourites"]["languages"],
+		favouriteTechnologies: json["favourites"]["technologies"],
 		skills: json["skills"],
 		email: {
 			name: "lucidsigma17",

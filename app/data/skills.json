@@ -1,4 +1,16 @@
 {
+	"favourites": {
+		"languages": [
+			"Rust",
+			"C++",
+			"C#"
+		],
+		"technologies": [
+			"SDL",
+			"OpenGL",
+			"Vulkan"
+		]
+	},
 	"skills": {
 		"languages": [
 			{

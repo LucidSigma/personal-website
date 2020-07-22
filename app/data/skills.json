@@ -173,6 +173,10 @@
 						"image": "expressjs.png"
 					},
 					{
+						"name": "Redux",
+						"image": "redux.png"
+					},
+					{
 						"name": "MongoDB/Mongoose",
 						"image": "mongodb.png"
 					},

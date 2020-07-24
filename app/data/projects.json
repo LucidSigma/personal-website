@@ -4,7 +4,7 @@
 			"name": "Vulkan Solar System",
 			"githubLink": "https://github.com/LucidSigma/vulkan-solar-system",
 			"description": [
-				"This is an interaction 3D application that models the Solar System. It includes the Sun, all eight planets, five drawf planets, and Sedna; as well as some moons and rings.",
+				"This is an interactive 3D application that models the Solar System. It includes the Sun, all eight planets, five drawf planets, and Sedna; as well as some moons and rings.",
 				"It was made with C++ and Vulkan - which means a lot of boilerplate code was needed to set up the swapchain, framebuffers, and pipelines.",
 				"Each planet is an OBJ file, and is loaded with a texture. The Phong lighting model was used to give the planets shadows and specular highlights.",
 				"There is also a cubemap of the Milky Way galaxy in the background, and the application makes use of a 3D first-person camera."
@@ -61,6 +61,19 @@
 			],
 			"technologiesUsed": ["C++", "SDL", "OpenGL", "OpenAL"],
 			"image": "voxelEngine.png"
+		},
+		{
+			"name": "Interactive Real-time Whiteboard Physics Sandbox",
+			"githubLink": "https://github.com/LucidSigma/whiteboard-physics-sandbox",
+			"actionLink": "https://twitter.com/LucidSigma/status/1286549253226024960?s=20",
+			"description": [
+				"A real-time application that will turn whiteboard drawings into a 2D physics sandbox.",
+				"The application uses OpenCV to acces the webcam, and analyses the life feed to identify drawings on the whiteboard, which it then turns into box colliders.",
+				"SDL2 is used to render a red ball on another window that will interact with the generated colliders. If it goes below the bottom of the window, it will teleport to the top and fall down again.",
+				"Box2D is used for the physics. Ideally, a projector projecting the physics window is used and displayed on the whiteboard, so it looks like the ball is actually interacting with the drawings."
+			],
+			"technologiesUsed": ["C++", "SDL", "OpenCV", "Box2D"],
+			"image": "whiteboardPhysicsSandbox.png"
 		},
 		{
 			"name": "Web Tic-Tac-Toe",

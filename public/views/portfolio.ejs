@@ -27,6 +27,10 @@
 						<% if (project.hostedLink !== undefined) { %>
 							<a class="tiny ui violet button" href="<%= project.hostedLink %>" target="_blank">Visit it!</a>
 						<% } %>
+
+						<% if (project.actionLink !== undefined) { %>
+							<a class="tiny ui violet button" href="<%= project.actionLink %>" target="_blank">See it in action!</a>
+						<% } %>
 					</div>
 
 					<hr class="project-rule">

@@ -68,7 +68,7 @@
 			"actionLink": "https://twitter.com/LucidSigma/status/1286549253226024960?s=20",
 			"description": [
 				"A real-time application that will turn whiteboard drawings into a 2D physics sandbox.",
-				"The application uses OpenCV to acces the webcam, and analyses the life feed to identify drawings on the whiteboard, which it then turns into box colliders.",
+				"The application uses OpenCV to access the webcam, and analyses the life feed to identify drawings on the whiteboard, which it then turns into box colliders.",
 				"SDL2 is used to render a red ball on another window that will interact with the generated colliders. If it goes below the bottom of the window, it will teleport to the top and fall down again.",
 				"Box2D is used for the physics. Ideally, a projector projecting the physics window is used and displayed on the whiteboard, so it looks like the ball is actually interacting with the drawings."
 			],

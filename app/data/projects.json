@@ -100,6 +100,18 @@
 			"image": "openglPong.png"
 		},
 		{
+			"name": "Space Invaders",
+			"githubLink": "https://github.com/LucidSigma/space-invaders",
+			"description": [
+				"A clone of Space Invaders made with Rust and SDL2. The player controls a spaceship and shoots down a fleet of aliens each level.",
+				"The aliens get faster each level, and give the player more points. They can also shoot back at the player.",
+				"The game engine architecture consists of a scene queue, and has a game loop that controls all of the input handling, updating, and drawing for the scenes.",
+				"The project was made with Rust with its SDL2 port. This allowed me to create a more data-driven style of game engine."
+			],
+			"technologiesUsed": ["Rust", "SDL"],
+			"image": "spaceInvaders.png"
+		},
+		{
 			"name": "Rust Snake",
 			"githubLink": "https://github.com/LucidSigma/rust-snake",
 			"description": [

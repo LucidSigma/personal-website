@@ -158,6 +158,10 @@
 					{
 						"name": "Semantic UI",
 						"image": "semanticui.png"
+					},
+					{
+						"name": "React",
+						"image": "react.png"
 					}
 				]
 			},

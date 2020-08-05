@@ -30,7 +30,7 @@
 			"hostedLink": "http://www.matty-o.xyz",
 			"description": [
 				"This is my personal website (that you are on now). It exists simple to show off who I am, what my technological skills are, and what I have created with them.",
-				"It uses a Node.js/Express.js backend, and the front-end is basic HTML/CSS/JavaScript, powered by jQuery and Semantic UI to make development easier.",
+				"It uses a Node.js/Express.js backend, and the front-end is basic HTML/CSS/JavaScript; powered by jQuery and Semantic UI to make development easier.",
 				"The most impressive feature (in my opinion) is the prodecural mesh terrain on the home page. This was made with Three.js/WebGL using my existing computer graphics experience (I have done similar terrain generation before).",
 				"The site also demonstrates usage of CSS flexbox, and also includes a Particles.js canvas as well."
 			],
@@ -56,7 +56,7 @@
 				"This is a voxel engine (videlicit, a lightweight Minecraft clone) made with C++17 and OpenGL 4.6. SDL was also used to help with windowing and creating an OpenGL context in C++.",
 				"The application generates the terrain using simplex noise in manageable chunks. These chunks can be can be edited by breaking and placing blocks. Each block has its texture loaded from a tilemap.",
 				"A significant amount of linear algebra was used to help with the 3D camera, as well as unprojecting the coordinates to place/break blocks (to help know what the camera was pointing at).",
-				"The application has a mini game engine built into it, that streamlines a lot of the processes of the game - from scene handling, to input, rendering, and object updates.",
+				"The application has a mini game engine built into it that streamlines a lot of the processes of the game - from scene handling, to input, rendering, and object updates.",
 				"The engine also includes a custom-made font renderer (using FreeType), the ability to capture screenshots, and has a 3D positional audio system (using OpenAL)."
 			],
 			"technologiesUsed": ["C++", "SDL", "OpenGL", "OpenAL"],
@@ -68,7 +68,7 @@
 			"actionLink": "https://twitter.com/LucidSigma/status/1286549253226024960?s=20",
 			"description": [
 				"A real-time application that will turn whiteboard drawings into a 2D physics sandbox.",
-				"The application uses OpenCV to access the webcam, and analyses the life feed to identify drawings on the whiteboard, which it then turns into box colliders.",
+				"The application uses OpenCV to access the webcam, and analyses the life feed to identify drawings on the whiteboard; which it then turns into box colliders.",
 				"SDL2 is used to render a red ball on another window that will interact with the generated colliders. If it goes below the bottom of the window, it will teleport to the top and fall down again.",
 				"Box2D is used for the physics. Ideally, a projector projecting the physics window is used and displayed on the whiteboard, so it looks like the ball is actually interacting with the drawings."
 			],

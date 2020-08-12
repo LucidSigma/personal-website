@@ -215,6 +215,10 @@
 					{
 						"name": "Visual Studio Code",
 						"image": "vscode.png"
+					},
+					{
+						"name": "IntelliJ IDEA",
+						"image": "intellijidea.png"
 					}
 				]
 			},

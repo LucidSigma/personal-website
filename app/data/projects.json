@@ -38,6 +38,19 @@
 			"image": "personalWebsite.png"
 		},
 		{
+			"name": "StarMaker",
+			"githubLink": "https://github.com/LucidSigma/starmaker",
+			"hostedLink": "https://star-maker.herokuapp.com",
+			"description": [
+				"A MERN app that allows the user to create stars and planets. The stars/planets are stored in a database using MongoDB.",
+				"The front-end is made with React, and the user can view, create, add, edit, or delete the several planets and stars. Bootstrap is also used to help with the styling.",
+				"The back-end is made with Node.js and Express.js. The front-end communicates with the server using the Axios API. TypeScript and SCSS are used to make development easier than plain JavaScript and CSS.",
+				"The app is designed with RESTful routing in mind, and the server demonstrates usage of MVC architecture."
+			],
+			"technologiesUsed": ["HTML", "CSS", "Sass/SCSS", "Bootstrap", "JavaScript", "TypeScript", "React", "Node.js", "Express.js", "MongoDB/Mongoose"],
+			"image": "starmaker.png"
+		},
+		{
 			"name": "WorldBuilder",
 			"githubLink": "https://github.com/LucidSigma/worldbuilder",
 			"hostedLink": "https://young-waters-53007.herokuapp.com",

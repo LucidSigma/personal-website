@@ -15,7 +15,7 @@ router.get("/", async (request, response) => {
 		favouriteTechnologies: json["favourites"]["technologies"],
 		skills: json["skills"],
 		email: {
-			name: "lucidsigma17",
+			name: "mattschafer1999",
 			domain: "gmail"
 		}
 	});

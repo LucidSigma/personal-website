@@ -68,7 +68,7 @@
 			"description": [
 				"This is a voxel engine (videlicit, a lightweight Minecraft clone) made with C++17 and OpenGL 4.6. SDL was also used to help with windowing and creating an OpenGL context in C++.",
 				"The application generates the terrain using simplex noise in manageable chunks. These chunks can be can be edited by breaking and placing blocks. Each block has its texture loaded from a tilemap.",
-				"A significant amount of linear algebra was used to help with the 3D camera, as well as unprojecting the coordinates to place/break blocks (to help know what the camera was pointing at).",
+				"A significant amount of linear algebra was used to help with the 3D camera, as well as unprojecting the coördinates to place/break blocks (to help know what the camera was pointing at).",
 				"The application has a mini game engine built into it that streamlines a lot of the processes of the game - from scene handling, to input, rendering, and object updates.",
 				"The engine also includes a custom-made font renderer (using FreeType), the ability to capture screenshots, and has a 3D positional audio system (using OpenAL)."
 			],

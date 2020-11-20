@@ -58,10 +58,6 @@
 						"image": "lua.png"
 					},
 					{
-						"name": "PHP",
-						"image": "php.png"
-					},
-					{
 						"name": "Ruby",
 						"image": "ruby.png"
 					}
@@ -77,10 +73,6 @@
 					{
 						"name": "Haskell",
 						"image": "haskell.png"
-					},
-					{
-						"name": "OCaml",
-						"image": "ocaml.png"
 					}
 				]
 			},
@@ -102,14 +94,6 @@
 					{
 						"name": "SQL",
 						"image": "sql.png"
-					},
-					{
-						"name": "GLSL",
-						"image": "glsl.png"
-					},
-					{
-						"name": "PowerShell",
-						"image": "powershell.png"
 					}
 				]
 			}
@@ -133,14 +117,6 @@
 					{
 						"name": "Vulkan",
 						"image": "vulkan.png"
-					},
-					{
-						"name": "WebGL",
-						"image": "webgl.png"
-					},
-					{
-						"name": "Unity",
-						"image": "unity.png"
 					}
 				]
 			},
@@ -177,29 +153,8 @@
 						"image": "expressjs.png"
 					},
 					{
-						"name": "Redux",
-						"image": "redux.png"
-					},
-					{
 						"name": "MongoDB/Mongoose",
 						"image": "mongodb.png"
-					},
-					{
-						"name": "Ruby on Rails",
-						"image": "rubyonrails.png"
-					}
-				]
-			},
-			{
-				"header": "Other",
-				"list": [
-					{
-						"name": "OpenAL",
-						"image": "openal.png"
-					},
-					{
-						"name": "OpenCV",
-						"image": "opencv.png"
 					}
 				]
 			}
@@ -219,19 +174,6 @@
 					{
 						"name": "IntelliJ IDEA",
 						"image": "intellijidea.png"
-					}
-				]
-			},
-			{
-				"header": "Embedded/SBCs",
-				"list": [
-					{
-						"name": "Raspberry Pi",
-						"image": "raspberrypi.png"
-					},
-					{
-						"name": "Arduino",
-						"image": "arduino.png"
 					}
 				]
 			},

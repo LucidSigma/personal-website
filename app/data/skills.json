@@ -58,23 +58,14 @@
 						"image": "lua.png"
 					},
 					{
-						"name": "Ruby",
-						"image": "ruby.png"
-					}
-				]	
-			},
-			{
-				"header": "Functional",
-				"list": [
-					{
 						"name": "F#",
 						"image": "fs.png"
 					},
 					{
-						"name": "Haskell",
-						"image": "haskell.png"
+						"name": "Ruby",
+						"image": "ruby.png"
 					}
-				]
+				]	
 			},
 			{
 				"header": "Other",

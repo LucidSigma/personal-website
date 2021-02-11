@@ -1,6 +1,19 @@
 {
 	"projects": [
 		{
+			"name": "Stardust",
+			"githubLink": "https://github.com/LucidSigma/stardust",
+			"description": [
+				"Stardust is a 2D game engine/framework made with C++20, SDL2, and OpenGL.",
+				"It consists of many modules - including graphics, audio, input, physics, filesystem, animation, and scripting.",
+				"The rendering is done by batching OpenGL draw calls in order to increase performance. There is a orthographic camera system in place and conversions between world and screen coordinates are possible.",
+				"It features positional audio, as well as universal input handling from keyboards, mouses/mice, and game controllers.",
+				"Other utilities include custom locale loading, user configuration loading, a scripting interface with Lua, a particle system, animation tweens, and a virtual filesystem created from ZIP archives."
+			],
+			"technologiesUsed": ["C++", "SDL2", "OpenGL", "Box2D", "Lua"],
+			"image": "stardust.png"
+		},
+		{
 			"name": "Vulkan Solar System",
 			"githubLink": "https://github.com/LucidSigma/vulkan-solar-system",
 			"description": [
